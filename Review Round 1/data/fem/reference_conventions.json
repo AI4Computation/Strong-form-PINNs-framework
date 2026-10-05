@@ -1,0 +1,72 @@
+{
+  "C1": {
+    "solid_side_wall_reference_offset": 1e-08,
+    "coordinates": "normalized",
+    "displacement_scale_m": 1.0,
+    "stress_scale_MPa": 1.0,
+    "length_scale_m": 1.0,
+    "components": [
+      "u_x",
+      "u_y",
+      "sigma_xx",
+      "sigma_yy",
+      "sigma_xy"
+    ]
+  },
+  "C8": {
+    "solid_side_wall_reference_offset": 1e-08,
+    "coordinates": "normalized",
+    "displacement_scale_m": 1.0,
+    "stress_scale_MPa": 1.0,
+    "length_scale_m": 1.0,
+    "components": [
+      "u_x",
+      "u_y",
+      "sigma_xx",
+      "sigma_yy",
+      "sigma_xy"
+    ]
+  },
+  "L1": {
+    "solid_side_wall_reference_offset": 1e-08,
+    "coordinates": "normalized",
+    "displacement_scale_m": 1.0,
+    "stress_scale_MPa": 1.0,
+    "length_scale_m": 1.0,
+    "components": [
+      "u_x",
+      "u_y",
+      "sigma_xx",
+      "sigma_yy",
+      "sigma_xy"
+    ]
+  },
+  "S1": {
+    "solid_side_wall_reference_offset": 1e-08,
+    "coordinates": "normalized",
+    "displacement_scale_m": 1.0,
+    "stress_scale_MPa": 1.0,
+    "length_scale_m": 1.0,
+    "components": [
+      "u_x",
+      "u_y",
+      "sigma_xx",
+      "sigma_yy",
+      "sigma_xy"
+    ]
+  },
+  "T1": {
+    "solid_side_wall_reference_offset": 2.384185791015625e-07,
+    "coordinates": "normalized",
+    "displacement_scale_m": 0.01875,
+    "stress_scale_MPa": 2.5,
+    "length_scale_m": 75.0,
+    "components": [
+      "u_x",
+      "u_y",
+      "sigma_xx",
+      "sigma_yy",
+      "sigma_xy"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "C1": {
+    "geometry": "C1",
+    "lateral": -1.0,
+    "top": -5.0,
+    "E": 1.333,
+    "nu": 0.3333,
+    "hole_normal_stress": {
+      "cavity": 0.0
+    },
+    "length_scale": 1.0,
+    "displacement_scale": 1.0,
+    "stress_scale": 1.0
+  },
+  "C8": {
+    "geometry": "C1",
+    "lateral": -4.0,
+    "top": -4.0,
+    "E": 1.333,
+    "nu": 0.3333,
+    "hole_normal_stress": {
+      "cavity": 0.0
+    },
+    "length_scale": 1.0,
+    "displacement_scale": 1.0,
+    "stress_scale": 1.0
+  },
+  "L1": {
+    "geometry": "L1",
+    "lateral": -1.0,
+    "top": -5.0,
+    "E": 1.333,
+    "nu": 0.3333,
+    "hole_normal_stress": {
+      "cavity": 0.0
+    },
+    "length_scale": 1.0,
+    "displacement_scale": 1.0,
+    "stress_scale": 1.0
+  },
+  "T1": {
+    "E": 1.0,
+    "nu": 0.26,
+    "lateral": -4.0,
+    "top": -4.0,
+    "hole_normal_stress": {
+      "cavity": 0.0,
+      "water": -1.0
+    },
+    "length_scale": 75.0,
+    "stress_scale": 2.5,
+    "displacement_scale": 0.01875,
+    "geometry": "T1"
+  },
+  "S1": {
+    "E": 1.333,
+    "nu": 0.3333,
+    "lateral": -1.0,
+    "top": -5.0,
+    "hole_normal_stress": {
+      "cavity": 0.0
+    },
+    "length_scale": 1.0,
+    "stress_scale": 1.0,
+    "displacement_scale": 1.0,
+    "geometry": "S1"
+  }
+}

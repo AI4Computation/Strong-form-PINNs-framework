@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-09-26T12:53:10.887564+00:00",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 24,
+  "physical_cpus": 24,
+  "ram_bytes": 68364259328,
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU, 610.78, 16303, [N/A]",
+  "cpu_threads": 2,
+  "environment": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_THREADING_LAYER": "SEQUENTIAL",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  }
+}

@@ -1,0 +1,7 @@
+# Install PyTorch with a CUDA build appropriate for the reader's GPU, or use CPU.
+# Recorded experimental versions are in configs/recorded_environment.json.
+torch>=2.9,<3
+numpy==1.26.4
+scipy==1.17.0
+matplotlib==3.9.2
+threadpoolctl==3.5.0

@@ -1,0 +1,7 @@
+{
+  "base_depth": 2,
+  "maximum_depth": 6,
+  "boundary_spacing_over_outer_length": 0.00390625,
+  "overlap_ratio": 1.5,
+  "corner_turn_degrees": 30
+}

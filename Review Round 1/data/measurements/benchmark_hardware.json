@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-09-21T10:14:38.753542+00:00",
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "cpu_physical_cores": 24,
+  "cpu_logical_processors": 24,
+  "ram_capacity_bytes": 68364259328,
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "gpu_count": 1,
+  "gpu_capacity_MiB": 16303,
+  "gpu_driver": "610.78",
+  "peak_method_ram_measured": false,
+  "peak_method_vram_measured": false
+}

@@ -1,0 +1,14 @@
+{
+  "fit_order": 5,
+  "initial_base_depth": 4,
+  "maximum_base_depth": 6,
+  "energy_component_relative_tolerance": 0.0001,
+  "gradient_relative_tolerance": 0.05,
+  "gradient_scale_floor": 1e-06,
+  "total_optimizer_accepted_step_budget": 1000,
+  "block_steps": 50,
+  "max_evaluations_per_block": 125,
+  "history_size": 50,
+  "tolerance_grad": 1e-07,
+  "tolerance_change": 1e-12
+}

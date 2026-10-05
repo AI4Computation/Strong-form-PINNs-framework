@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "representations_C1_fourier_half_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_geometry_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_uniform_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_geometry_rbf_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "geometry_rbf_anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_independent_marginal_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "independent_marginal",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C1_geometry_rbf_independent_s260926_continuous",
+    "preset": "representations",
+    "case": "C1",
+    "seed": 260926,
+    "method": "geometry_rbf_independent",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_fourier_half_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_geometry_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_uniform_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_geometry_rbf_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "geometry_rbf_anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_independent_marginal_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "independent_marginal",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_C8_geometry_rbf_independent_s260926_continuous",
+    "preset": "representations",
+    "case": "C8",
+    "seed": 260926,
+    "method": "geometry_rbf_independent",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_fourier_half_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_geometry_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_uniform_rbf_fourier_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_geometry_rbf_anchored_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "geometry_rbf_anchored",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_independent_marginal_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "independent_marginal",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "representations_L1_geometry_rbf_independent_s260926_continuous",
+    "preset": "representations",
+    "case": "L1",
+    "seed": 260926,
+    "method": "geometry_rbf_independent",
+    "arm": "continuous",
+    "max_iter": 400,
+    "checkpoints": [
+      0,
+      100,
+      200,
+      400
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "budgets_C1_fourier_half_s260927_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260927,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_geometry_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260927,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_uniform_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260927,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_fourier_half_s260928_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260928,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_geometry_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260928,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_uniform_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260928,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_fourier_half_s260929_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260929,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_geometry_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260929,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C1_uniform_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "C1",
+    "seed": 260929,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_fourier_half_s260927_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260927,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_geometry_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260927,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_uniform_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260927,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_fourier_half_s260928_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260928,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_geometry_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260928,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_uniform_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260928,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_fourier_half_s260929_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260929,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_geometry_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260929,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_C8_uniform_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "C8",
+    "seed": 260929,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_fourier_half_s260927_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260927,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_geometry_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260927,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_uniform_rbf_fourier_s260927_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260927,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_fourier_half_s260928_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260928,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_geometry_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260928,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_uniform_rbf_fourier_s260928_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260928,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_fourier_half_s260929_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260929,
+    "method": "fourier_half",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_geometry_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260929,
+    "method": "geometry_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "budgets_L1_uniform_rbf_fourier_s260929_continuous",
+    "preset": "budgets",
+    "case": "L1",
+    "seed": 260929,
+    "method": "uniform_rbf_fourier",
+    "arm": "continuous",
+    "max_iter": 1600,
+    "checkpoints": [
+      0,
+      400,
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 1600,
+      "max_eval": 2400
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260927_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260927_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260927_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260927_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260927_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260927_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260927,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260928_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260928_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260928_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260928_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260928_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260928_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260928,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260929_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_fourier_half_s260929_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260929_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_geometry_rbf_fourier_s260929_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260929_fixed_reset",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "sampling_L1_uniform_rbf_fourier_s260929_uniform_refresh",
+    "preset": "sampling",
+    "case": "L1",
+    "seed": 260929,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260930,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260931,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_fourier_half_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_geometry_rbf_fourier_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_S1_uniform_rbf_fourier_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "S1",
+    "seed": 260932,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260930_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260930_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260930,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260931_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260931_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260931,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "fourier_half",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_fourier_half_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "fourier_half",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "geometry_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_geometry_rbf_fourier_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "geometry_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260932_fixed_reset",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "uniform_rbf_fourier",
+    "arm": "fixed_reset",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  },
+  {
+    "id": "transfer_T1_uniform_rbf_fourier_s260932_uniform_refresh",
+    "preset": "transfer",
+    "case": "T1",
+    "seed": 260932,
+    "method": "uniform_rbf_fourier",
+    "arm": "uniform_refresh",
+    "max_iter": 400,
+    "checkpoints": [
+      800,
+      1600
+    ],
+    "optimizer": {
+      "lr": 1.0,
+      "history_size": 50,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-07,
+      "tolerance_change": 1e-12,
+      "max_iter": 400,
+      "max_eval": 600
+    }
+  }
+]
