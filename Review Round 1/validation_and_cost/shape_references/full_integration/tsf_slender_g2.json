@@ -1,0 +1,54 @@
+{
+  "job": "tsf_slender_g2",
+  "geometry": "slender",
+  "level": 2,
+  "quadratic": true,
+  "element_type": "CPE8",
+  "nodes": 143200,
+  "elements": 47360,
+  "area": 0.9880000000000136,
+  "minimum_edge": 7.22290999170469e-05,
+  "maximum_aspect_ratio": 101.90008123548108,
+  "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_shape_reference_full_20260921\\tsf_slender_g2.inp",
+  "input_sha256": "3cd8e549d23837fbf43d9857a0376741eb380fcfc0dd443145ddc23475f2b6e9",
+  "mesh_file": "research\\validation_and_cost\\shape_references\\tsr_slender_g2_mesh.npz",
+  "mesh_sha256": "4ebb7b960cef217e67f2635f4373bb648c36ad8b04fbb96add0d9d26e618361e",
+  "steps": {
+    "Load": {
+      "file": "tsf_slender_g2_Load.npz",
+      "integration_points": 426240,
+      "area": 0.9880000002102367,
+      "coord_error_initial": 2.086064443537128e-08,
+      "coord_error_deformed": 4.505423555638947,
+      "ip_shape_permutation": {
+        "CPE8": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "sum_reaction": [
+        1.4022985246955888e-12,
+        5.000000009109499
+      ],
+      "max_displacement": [
+        0.8129928112030029,
+        4.505452632904053
+      ],
+      "energies": {
+        "ALLSE": 9.689168930053711,
+        "ALLWK": 9.689168930053711
+      }
+    }
+  },
+  "odb_coordinate_rounding": 1.4898415168218548e-08,
+  "element_types": {
+    "CPE8": 47360
+  }
+}

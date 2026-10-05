@@ -1,0 +1,49 @@
+{
+  "job": "tsr_square_g0",
+  "geometry": "square",
+  "level": 0,
+  "quadratic": true,
+  "element_type": "CPE8R",
+  "nodes": 7440,
+  "elements": 2400,
+  "area": 0.9599999999999976,
+  "minimum_edge": 0.002462331880972418,
+  "maximum_aspect_ratio": 12.706204736174909,
+  "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_shape_reference_20260921\\tsr_square_g0.inp",
+  "input_sha256": "600377d0900e2899eb711daa3d26dcc0ce33180ade0ed02115785109cbb5ba95",
+  "mesh_file": "research\\validation_and_cost\\shape_references\\tsr_square_g0_mesh.npz",
+  "mesh_sha256": "115fee20ad3930f6e90650fd8007b684f71ef003642f0d1a75a6678a68ddcda3",
+  "steps": {
+    "Load": {
+      "file": "tsr_square_g0_Load.npz",
+      "integration_points": 9600,
+      "area": 0.959999997925479,
+      "coord_error_initial": 2.0505187461952017e-08,
+      "coord_error_deformed": 3.631551453060981,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        1.1315536181666364e-13,
+        4.999999960884452
+      ],
+      "max_displacement": [
+        0.6110963225364685,
+        3.63301682472229
+      ],
+      "energies": {
+        "ALLSE": 8.04874038696289,
+        "ALLWK": 8.04874038696289
+      }
+    }
+  },
+  "odb_coordinate_rounding": 1.4806933512634401e-08,
+  "element_types": {
+    "CPE8R": 2400
+  }
+}

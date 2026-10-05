@@ -1,0 +1,68 @@
+{
+  "id": "R2_P2K_seed260931",
+  "purpose": "One preregistered replication seed; governed by R2_P2K_transfer_replication.json",
+  "registered_before_training": true,
+  "seed": 260931,
+  "cases": {
+    "T1": {
+      "E": 1.0,
+      "nu": 0.26,
+      "lateral": -4.0,
+      "top": -4.0,
+      "hole_normal_stress": {
+        "cavity": 0.0,
+        "water": -1.0
+      },
+      "length_scale": 75.0,
+      "stress_scale": 2.5,
+      "displacement_scale": 0.01875
+    },
+    "S1": {
+      "E": 1.333,
+      "nu": 0.3333,
+      "lateral": -1.0,
+      "top": -5.0,
+      "hole_normal_stress": {
+        "cavity": 0.0
+      },
+      "length_scale": 1.0,
+      "stress_scale": 1.0,
+      "displacement_scale": 1.0
+    }
+  },
+  "methods": [
+    "fourier_half",
+    "geometry_rbf_fourier",
+    "uniform_rbf_fourier"
+  ],
+  "arms": [
+    "fixed_reset",
+    "uniform_refresh"
+  ],
+  "representation": "Reuse byte-verified frozen P2D T1/S1 geometry and uniform Gaussian centres/widths, exact same 1000-input shared network, 110705 trainable parameters, Fourier law and initialization streams. No new geometry-rule, bandwidth, activation, loss-weight or per-case feature tuning. Material/traction data encode the physical problem, not a tuned representation.",
+  "mechanics": "Same mixed plane-strain strong equations, parameterized by the actual E/nu. Same outer pressure, bottom Uy roller, bottom shear-free condition and bottom-centre Ux gauge. Each cavity boundary tag contributes its own arc-length-normalized traction-vector MSE, target=specified normal stress times solid outward normal; ellipse water pressure=-1 in T1, tunnel free. Loss weights equilibrium/constitutive/traction/displacement=1/1/10/100 unchanged. No body forces.",
+  "sampling": "Shared P2A rule: 6000 total interior points with fixed geometry/local-uniform support probes, 0.9 uniform + 0.1 probes; 500 per outer edge; 1000 cavity samples allocated by geometric arc length across all cavities. Original normals and per-tag pressure labels reconstructed from the same boundary-curve order. Each arm shares the first 400-step block and exact initialization; uniform_refresh replaces ONLY the uniform interior subset for blocks 1/2/3, RNG=100000+seed+1000000*block. Fixed retains block 0. Geometry/method/arm choices never use FEM.",
+  "optimizer": {
+    "lr": 1.0,
+    "max_iter": 400,
+    "max_eval": 600,
+    "history_size": 50,
+    "line_search_fn": "strong_wolfe",
+    "tolerance_grad": 1e-07,
+    "tolerance_change": 1e-12
+  },
+  "blocks": 4,
+  "evaluation_steps": [
+    800,
+    1600
+  ],
+  "budget": "12 fresh trajectories for this seed; two seeds total 24 trajectories and 48 evaluated endpoints. Parent protocol requires all fits frozen before evaluation.",
+  "preflight": "Hash-check frozen geometry, implementation and reference-source metadata. Verify exact T1 units/material/pressure against submitted configuration, S1 load/material provenance, boundary signs and normals; independent affine patch and full-autograd objective/parameter-gradient checks for all methods/cases and finite full GPU gradients. S1 generalized mechanics must reproduce original one-cavity objective/gradients; no frozen code edits. Verify common points/weights and initial networks, positive Gaussian response, exact restart-arm first block.",
+  "references": "Reuse byte-verified P2J reference arrays and both independent physical sets, with the verified precision-aware geometry-only wall rule. No additional FEM repair, model selection or tuning.",
+  "evaluation": "All 24 registered endpoints receive complete area and original point/node U/S errors, wall errors, MAE, 50/90/95/99/max error norms, near/far regions and fixed engineering displacements/convergences. Save all fields and error norms. T1 cavity and water boundaries also reported separately; primary cavity extrema extracted from its geometry. Near-wall distance uses all cavities; sharp-corner regions use the unchanged geometric 30-degree turning threshold and distance .02 (not every smooth contour discretization vertex). Sampled nonlinear comparisons are within each case, never averaged across cases.",
+  "physics": "Two common independent uniform sets per geometry, 24000 each, seeds 9296101/9296102; not used in training. Save five residual components and complete distribution/near/far/sharp-corner statistics. Use true material constants and each cavity pressure. Numerical derivative audits at eight largest plus eight fixed random residual points per endpoint with scaled float64/autograd <1e-9 and float32/float64 <3e-4. No FEM-based selection, early stopping or tuning.",
+  "targets": "Same comparison targets (area U%,area S%,wall U%)=(5,20,10),(2,10,5),(1,5,2); report both fixed endpoints, first observed attainment and persistence; no engineering acceptance or time inference.",
+  "stop": "Close after 24 trajectories and all 48 evaluated fields; stop dependent work on nonfinite/early optimizer stop or numerical/hash failure. No new architecture search or added budgets in this batch.",
+  "formal_timing": false,
+  "fem_during_training": false
+}

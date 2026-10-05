@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "completed_abaqus_jobs": 12,
+  "reference_preparation_complete": true,
+  "new_method_cross_shape_accuracy_verified": false,
+  "report_sha256": "fbd29d2b239be58edd9669b08b8a669e72bf41de2520abe4d235723c8b8196cb",
+  "research_archive_sha256": "3810c65cd06e674a3e8999256c2937926356d5a5d8bf82f6ab5e28023d63749a",
+  "verification_sha256": "b655a16da5cfc88e10bce83a2929109da60a87f1085d16019fec549c852b5deb",
+  "timing_valid_for_comparison": false
+}

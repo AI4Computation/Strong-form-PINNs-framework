@@ -1,0 +1,12 @@
+{
+  "copied_local": "2026-09-25T23:45:00.888212+08:00",
+  "source_files": {
+    "research/validation_and_cost/code/geometry.py": "a304116b2eb47d3e1dae1c9d32df4eb3f7cb752eb29ec9b86c5e3dbefc3c2065",
+    "research/controlled_pinn/config/geometry.json": "db51ee62eb80635163d2b3959f8b5fe233ea5b51936daf2061b3930e8c67a3ed",
+    "research/validation_and_cost/code/problems.py": "ff074a6e4b0b3af575c49d21d46fe5c39a3182785377cff7267a7f941b6d5495"
+  },
+  "geometry_copy": "research/geometry_pinn/code/geometry_primitives.py",
+  "copy_sha256": "a304116b2eb47d3e1dae1c9d32df4eb3f7cb752eb29ec9b86c5e3dbefc3c2065",
+  "input_sha256": "75f94ee3d4eb3da1db99ead97550a75d54aa572b77a3dbe96782135bc631a983",
+  "scope": "Exact immutable geometry primitive copy and geometry-only data adapter. No first-round module imported/executed; no FEM inputs."
+}

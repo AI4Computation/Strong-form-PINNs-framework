@@ -1,0 +1,276 @@
+{
+  "frozen_utc": "2026-09-22T03:38:23.761104+00:00",
+  "purpose": "R2.5: matched plain versus anchored and strong half-Fourier C1 costs",
+  "scope": "Existing eight paired development seeds; no independent geometry or new-method validation",
+  "runs": 24,
+  "run_order": [
+    {
+      "identity": "C1_vanilla_matched_s41",
+      "method": "vanilla_matched",
+      "seed": 41
+    },
+    {
+      "identity": "C1_anchored_s41",
+      "method": "anchored",
+      "seed": 41
+    },
+    {
+      "identity": "C1_fourier_half_s41",
+      "method": "fourier_half",
+      "seed": 41
+    },
+    {
+      "identity": "C1_vanilla_matched_s42",
+      "method": "vanilla_matched",
+      "seed": 42
+    },
+    {
+      "identity": "C1_fourier_half_s42",
+      "method": "fourier_half",
+      "seed": 42
+    },
+    {
+      "identity": "C1_anchored_s42",
+      "method": "anchored",
+      "seed": 42
+    },
+    {
+      "identity": "C1_anchored_s43",
+      "method": "anchored",
+      "seed": 43
+    },
+    {
+      "identity": "C1_vanilla_matched_s43",
+      "method": "vanilla_matched",
+      "seed": 43
+    },
+    {
+      "identity": "C1_fourier_half_s43",
+      "method": "fourier_half",
+      "seed": 43
+    },
+    {
+      "identity": "C1_anchored_s44",
+      "method": "anchored",
+      "seed": 44
+    },
+    {
+      "identity": "C1_fourier_half_s44",
+      "method": "fourier_half",
+      "seed": 44
+    },
+    {
+      "identity": "C1_vanilla_matched_s44",
+      "method": "vanilla_matched",
+      "seed": 44
+    },
+    {
+      "identity": "C1_fourier_half_s45",
+      "method": "fourier_half",
+      "seed": 45
+    },
+    {
+      "identity": "C1_vanilla_matched_s45",
+      "method": "vanilla_matched",
+      "seed": 45
+    },
+    {
+      "identity": "C1_anchored_s45",
+      "method": "anchored",
+      "seed": 45
+    },
+    {
+      "identity": "C1_fourier_half_s46",
+      "method": "fourier_half",
+      "seed": 46
+    },
+    {
+      "identity": "C1_anchored_s46",
+      "method": "anchored",
+      "seed": 46
+    },
+    {
+      "identity": "C1_vanilla_matched_s46",
+      "method": "vanilla_matched",
+      "seed": 46
+    },
+    {
+      "identity": "C1_vanilla_matched_s47",
+      "method": "vanilla_matched",
+      "seed": 47
+    },
+    {
+      "identity": "C1_anchored_s47",
+      "method": "anchored",
+      "seed": 47
+    },
+    {
+      "identity": "C1_fourier_half_s47",
+      "method": "fourier_half",
+      "seed": 47
+    },
+    {
+      "identity": "C1_vanilla_matched_s48",
+      "method": "vanilla_matched",
+      "seed": 48
+    },
+    {
+      "identity": "C1_fourier_half_s48",
+      "method": "fourier_half",
+      "seed": 48
+    },
+    {
+      "identity": "C1_anchored_s48",
+      "method": "anchored",
+      "seed": 48
+    }
+  ],
+  "parameter_counts": {
+    "vanilla_matched": 110913,
+    "anchored": 110705,
+    "fourier_half": 110705
+  },
+  "science": "Frozen original configuration, initialization, collocation, objective, all closures, L-BFGS strong Wolfe; 2000 accepted-step maximum, default 2500 closure cap, history 50, gradient tolerance 1e-7, change tolerance 1e-12.",
+  "precision": "One GPU, float32, TF32 off, deterministic algorithms, four Torch CPU threads, fresh worker per run",
+  "observation_steps": "0, every 50 accepted steps, termination; portable states saved with actual timestamps",
+  "fem_policy": "Timed worker blocks FEM file access. Freeze every timed checkpoint in the whole cohort before post-evaluation; no reference-directed stopping or reruns.",
+  "accuracy_targets_pct": [
+    5,
+    2,
+    1
+  ],
+  "target_weightings": [
+    "joint point-weighted vector displacement and stress",
+    "joint area-weighted vector displacement and stress at FEM integration points"
+  ],
+  "statistic": "Report first observed success and adjacent observed-state time bracket, three-consecutive-observation confirmation, endpoint and NR counts. A bracket is an observation bracket, not proof against earlier unobserved crossings. No linear time interpolation; no mean-time claim ignoring failures.",
+  "clock_boundaries": {
+    "net_optimization": "Synchronized optimizer entry to return minus measured observer logging/state export time; includes all closures and line searches.",
+    "complete_observed": "Before model construction through final portable model save; includes sampling, optimizer construction, input hash audits, all state observations and logging.",
+    "cold_total": "Script entry to solution save includes imports, uniform CUDA warmup and preparation. Supervisor launch-to-exit additionally includes queries and postsolve audit/logging; report separately.",
+    "queries": "Fixed geometry-only 4096 float32 coordinates; all five native mixed outputs; 10 warmup batches, 50 device-resident and 50 host-GPU-host batches after solution clock closes."
+  },
+  "resources": "Solver-window CUDA allocated/reserved allocator peaks before query; lifetime RSS labelled lifetime; observer RSS labelled sampled. No FEM arrays held. Counters are not whole-device memory or a transient phase RSS guarantee.",
+  "interference_rules": {
+    "pre_run_minimum_cooldown_s": 5,
+    "pre_run_consecutive_good_samples": 3,
+    "pre_run_sample_interval_s": 1,
+    "pre_run_max_wait_s": 120,
+    "pre_run_gpu_utilization_pct_max": 10,
+    "pre_run_temperature_C_max": 65,
+    "pre_run_external_gpu_engine_pct_max": 15,
+    "pre_run_system_cpu_pct_max": 15,
+    "during_run_sample_interval_s": 3,
+    "during_run_external_gpu_engine_pct_max": 20,
+    "during_run_external_cpu_pct_max": 20,
+    "during_run_consecutive_bad_samples": 3,
+    "ac_power_required": true,
+    "process_wall_timeout_s": 600,
+    "on_interference": "Retain run and flag, then stop before next run; no outcome-based removal or automatic selective retry."
+  },
+  "idle_requirement": "Explicit fresh author idle confirmation, bound to this frozen protocol, no more than six hours old; single continuous window, no silent selective retry. Stop and retain flagged attempts before next run.",
+  "source_sha256": {
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\common.py": "775d5377089c5265678932c883eb1673bb330722cb283968eea1c9fd660bf69e",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\worker.py": "54ed2ef8eeb65bc25f07003715a69d652ff5b6d70814721b5d7c3e7dc4e1157e",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\prepare.py": "583198730518ead22a5906e84701f52bcae012386aeb177bf4ae0849ff42be30",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\supervisor.py": "ecf82bea457e8cb5a5c4dd71f71e3194162753133b026bf94b0fd64b413dde32",
+    "research\\controlled_pinn\\code\\runtime.py": "b884cdb0dfbe6e49e87068ed09b06d9843e4bca829f8c59eba27c9454cc5e865",
+    "research\\controlled_pinn\\code\\models.py": "0a99b21b0a3ca40f006ca92488cd4164fe11d740a307520dd7dce33eec1d1ffa",
+    "research\\controlled_pinn\\code\\observed_lbfgs.py": "6a47fb04c8cd45893568c6e858c7545b35b3cac1c7ba64f5867c8374cc0eda63",
+    "research\\validation_and_cost\\code\\cost_runtime.py": "1e1946d0dbd33df16af6bdfd225878a1ad57dee5786605ffbfc4739ee9a37f8c",
+    "research\\validation_and_cost\\code\\run_cost_benchmark.py": "ef521768371f3e420a1bca9af2db2567efc347e927b5718819c07c3de8018337",
+    "代码源文件\\审稿修改-基线对比\\benchmark_suite.py": "c8a7d4754646cafc5fdc46952d8b0c8371ab2c88156c3677eb523f65f4dfaf44"
+  },
+  "protected_inputs_sha256": {
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s41\\result.json": "8401bd27268c45c327f9eab82c3b38226851821a686f831a22184bdf9ddd3017",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s41\\step_00000.pt": "a3d283a8ab3ffe43106b234a7e3ba5f6bdf0fbb709220e2e9a4bafe25e055210",
+    "research\\controlled_pinn\\runs\\C1_anchored_s41\\result.json": "5f3ee7c9954fac703feb697f24499cf69ac277bed510341e6438bc25037b8b3f",
+    "research\\controlled_pinn\\runs\\C1_anchored_s41\\step_00000.pt": "1f20d25d15019239d519e9363943c8adbcffb23ee17543de26f887ae83277107",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s41\\result.json": "c3ddae79037c2ea844f198a876035fd5d7031fb1431b049ed7d3fac01b2b9af8",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s41\\step_00000.pt": "781654ef8af8d353dca0bf4a9aa18c9c24defc270c5f6b8c571a0167ceaf63b3",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s42\\result.json": "5f365ba7a4963269f226ee124a49c8a663ae6c98e01cf2f426c38b249179d549",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s42\\step_00000.pt": "1fcc3b85c38f3ce788f1f5253cd9799a83228320250938be95a35e03404744f7",
+    "research\\controlled_pinn\\runs\\C1_anchored_s42\\result.json": "a115e2c809aa5b4dc337b0b072622e664f8d6b4e6d82da16ddbc477e5c3a639d",
+    "research\\controlled_pinn\\runs\\C1_anchored_s42\\step_00000.pt": "cd0b77fa6d99626708c4e3f0e9d294a7d245bb988a51e16eea60675886002abd",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s42\\result.json": "c552bb0a54e6623ac72301d1eccb6f7f9655b813f44a319265a5a5aa9f38d77c",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s42\\step_00000.pt": "82195fc477bb71604725feaa617be23faaa9a02d858a5dbd258bf6439912f1fa",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s43\\result.json": "e2918206fa363627afd78b7b76342a6912b61622f2e982c106736adac32f0f16",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s43\\step_00000.pt": "c5a4e7841b52ddf5052cfa573a8c5ba312cefc65571291e4129425a4677dab88",
+    "research\\controlled_pinn\\runs\\C1_anchored_s43\\result.json": "8cb23ed63079d538f6d870d41b2370b48fa692def0e3b10d80e682c93f433bc6",
+    "research\\controlled_pinn\\runs\\C1_anchored_s43\\step_00000.pt": "34d71e7f9f88dae8dcd4607785d7b8f3b989f786ac4dd8ffa784b0dd9fae41f8",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s43\\result.json": "f49546ea1f06665a27093af0440c52b5de3b473111ca7f7e02c693029c1e9e34",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s43\\step_00000.pt": "b53fe971d484566f4f6a67417bf63b039a25336fe32591e80e4b1f0aa3525dbf",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s44\\result.json": "c803b38580e3a009ece81ba848b18b13755eb99204ef0f847a859af8b11091fb",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s44\\step_00000.pt": "754cbf6040f75adbafe4314fc07aac81606024135747470f6e01df526198f5c8",
+    "research\\controlled_pinn\\runs\\C1_anchored_s44\\result.json": "f24675e852f9b2cb27bc0bc7176f48aea70c800a23cb01b1623c6d354d5d9542",
+    "research\\controlled_pinn\\runs\\C1_anchored_s44\\step_00000.pt": "55c42984a26b6ee3a11a05c26a2bbcf2e608f7daaae333dea03ae6566b1e195d",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s44\\result.json": "fc02ccf78e0e867c1b1d6b4a5e9779787991157376739d1285a85b850ff036e0",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s44\\step_00000.pt": "a73ab63ebd3801e6fb25077f532ab834a711265b16f7a6c3c79da9d6ee6419f5",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s45\\result.json": "673aab70a2d93512f6319c1a4544b64b25389efdf7bd9bea2c4251314971c725",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s45\\step_00000.pt": "92eb4a027e90d213e7c0b5befcc135cad0ec1f70cad6fb57d77478eb4efdb97e",
+    "research\\controlled_pinn\\runs\\C1_anchored_s45\\result.json": "0021f5ce40f1d0f9f8d452a718abdbbb252e21017f9ef109c75897ec79f0f6e9",
+    "research\\controlled_pinn\\runs\\C1_anchored_s45\\step_00000.pt": "bc7fc05ce889abfcd9d4e57bc3559c46d1af372530c18c412d9e7be69caaf3af",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s45\\result.json": "753de9ecc4d17b8df8711441596c560122aac368af962305f35d549c98016950",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s45\\step_00000.pt": "09e3c407f0894e9415dad0d6b4f7deeaf8d9d1631277264aea9ad690ddf0d99a",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s46\\result.json": "a25a7a98b4a4c18d981086703e01df749cd35e5764cfec443cff81c922f152dd",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s46\\step_00000.pt": "e0bbb0baa05f18ce4d663185696047dbb63986670f39358f13665a5bf52ff396",
+    "research\\controlled_pinn\\runs\\C1_anchored_s46\\result.json": "5ce6e7d5bbe3f3f1ba93c56eb8231d6d18b2e9abda10afbf6bbf1093ed3bbc65",
+    "research\\controlled_pinn\\runs\\C1_anchored_s46\\step_00000.pt": "e7800a87d22b273e1e0105fb0f0c4c40fd048415f79b52944fcac47ae0569d65",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s46\\result.json": "9c3bb32d45ad681a57b28b4643ed80f6b154c48217bb091e931766c2d3ccbbdd",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s46\\step_00000.pt": "b4c2a6d40811a0bd5a655dfaa5d863d05c3abb6b5149e0b42218d5061a6a96b9",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s47\\result.json": "ed677d3cf527dc6b9a68a9f2db95aea406f9974018e1ea2a41b28ff3825e60da",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s47\\step_00000.pt": "57925ea35783b7755d7e8eb98143da32a65c4b263b61cfe146b643cc38a5e60e",
+    "research\\controlled_pinn\\runs\\C1_anchored_s47\\result.json": "cabc0f0a1e6a8b82ef84668c3a1ef04dd6273333f2c62040bece187c993b728a",
+    "research\\controlled_pinn\\runs\\C1_anchored_s47\\step_00000.pt": "9bd001539d7f67a0d1221582d73584200e0b029bf411cb8ad5516baa155502f9",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s47\\result.json": "b5633d91df3f42aed864160fe79dbe9ab8244ce9a7d7fb6ab7e2a0b5c9b2c497",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s47\\step_00000.pt": "e9f9f509fdfcff8e35039ca9bfe331308c8b2a1d8bacc5ca041e314a28f27dcb",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s48\\result.json": "7c49167a7afae9511f90799f34bcd446e8caa1d0369ad27e965024dbf5795eb4",
+    "research\\controlled_pinn\\runs\\C1_vanilla_matched_s48\\step_00000.pt": "663ce42a500a663d8bf026413df35fd04cbbc5f5c26645f183d514bdc4db4e80",
+    "research\\controlled_pinn\\runs\\C1_anchored_s48\\result.json": "478c2585998ff9bd640a34c47f50976cb6a5ce22446ed459b7af3e4e4063934c",
+    "research\\controlled_pinn\\runs\\C1_anchored_s48\\step_00000.pt": "c094b2423b4008937f605da46d4cb58235271e06a231e01b6ebadbb014ebd342",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s48\\result.json": "bbaf6326ae9d89d03dc32d91481a2e7b75a5bbff55a03cd1f012fe299d31796e",
+    "research\\controlled_pinn\\runs\\C1_fourier_half_s48\\step_00000.pt": "a33d303bd0f4b9eeaeb01c49ed74926d6ff2d65714fa7d3520434cdecf389e01",
+    "research\\controlled_pinn\\config\\geometry.json": "db51ee62eb80635163d2b3959f8b5fe233ea5b51936daf2061b3930e8c67a3ed",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_bare\\model.pt": "e8196524fa7c54a204dd9c1fe81abef799414c718af0f1b00947553c8d20061a",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_bare\\result.json": "3e4df913699f868ed6c26c97843054f8fe1b40db8942e375e4c26074569d8871",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_bare\\worker.log": "33c366e6bad4c8dc0b7be4b3ded3b3c97f68a9a46a7e12df8e4599d54b140f27",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\model.pt": "e8196524fa7c54a204dd9c1fe81abef799414c718af0f1b00947553c8d20061a",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\progress.json": "49d96f761545b5f6bab6f85db66d1005908935b95a4393625b2df09e7ae9e370",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\result.json": "8a8cb96946aef9099a53fd180c893d603bf61629708fa1f046ff192c7c41b11c",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\step_00000.pt": "f0981e1f190136d426d74d5b31b65b5cf96edcda128a88ea6075ec2f9ed7c3a2",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\step_00050.pt": "b23315d3d381f20bd414d3f482d83bd7193a7f7ab1c1b8426771cd760b6cdbdb",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\step_00100.pt": "e8196524fa7c54a204dd9c1fe81abef799414c718af0f1b00947553c8d20061a",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_instrumented\\worker.log": "997c544b54847c72bf43b3a22f2d48286e0d70c362b17d82fa31a25958c2d701",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_stock\\model.pt": "402065526956933017928bfdadce61ce2f3e45ac963a8bb118b3a0806dbb7547",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_stock\\result.json": "0623bd5ac5c26ef6e4f68657c14bae852031554eca41f73d70f0071784633bff",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_anchored_s42_stock\\worker.log": "0a1fd5c5a35715a429f1b5e58e2acc4d814b78584444b0cd8607564e5b52c41c",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_bare\\model.pt": "75cd8f026e15b307922acee4055e93af3c92240ef1dbdf7dd67ad6658ce19b6f",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_bare\\result.json": "c1ca224a147d24dd65877cbb79cec62e91e3e1adf830d0657abe8540312cd55f",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_bare\\worker.log": "be3a4470e73adb40a5818c89fcfe5198b0360daaa3477bc5e5e506d6133ee83b",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\model.pt": "75cd8f026e15b307922acee4055e93af3c92240ef1dbdf7dd67ad6658ce19b6f",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\progress.json": "47ca069424ac5e6c779f9877d2d9a26829f05fb5bedca38538275a033d33b106",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\result.json": "b0995e396e2186dcb2b587aa3e3da17f9c7597a6c55143ffb1f379f978ccd097",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\step_00000.pt": "e712b74f9f049a56537d33d0fd5a58cf36f51f371abde0cbfa22decce88fbf80",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\step_00050.pt": "ca97c3d8ee2f8e682c5ba5399f25dda0a3fc29757dfd8a8604f99afa80e16a59",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\step_00100.pt": "75cd8f026e15b307922acee4055e93af3c92240ef1dbdf7dd67ad6658ce19b6f",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_instrumented\\worker.log": "51e81fda7bd878c955a315c981a741dacdd4f018a49cf5fb8394de8f6e746ed8",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_stock\\model.pt": "988fb14197a3d86a5fce10ef0c42ea03ed90a4cf81c9d1278ad1046a64974cfa",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_stock\\result.json": "c5085857c5c780248df43005307caca6517e7b0e3c7ee940370138a9f469068f",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_fourier_half_s42_stock\\worker.log": "f9278432d6582589e12d12722d47b08b68b347fb9380332d9370db13bd02b7d9",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_bare\\model.pt": "a3e0460c4bd3c4009acdf956910cbcc8fb0511051c75018ee4794228cb6ca4be",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_bare\\result.json": "fc4fe9fab5c5d9b49d1fed3509b6a33e71aa4748cbb91aca8b169586c4db5f5b",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_bare\\worker.log": "687256c0080d459b710177bda45d59ebb9139b43b68f985355503fa2545bf393",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\model.pt": "a3e0460c4bd3c4009acdf956910cbcc8fb0511051c75018ee4794228cb6ca4be",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\progress.json": "371d1481ac5300bd8373319169e6f075b88731989961df834c1449e59886828c",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\result.json": "1d7dbc2a9e5ce9d5a3787fa5bff0118ed55e138b8712dbb25c3bb4e3c8845bba",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\step_00000.pt": "3d281d733b9a93dc91a18ed65939c6d3294a404bce598e560cde2eb5c53d652e",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\step_00050.pt": "7fa5d58e6f3c6016e948a89dfe8397ac9671d0d11d7355c0d55f780afef84059",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\step_00100.pt": "a3e0460c4bd3c4009acdf956910cbcc8fb0511051c75018ee4794228cb6ca4be",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_instrumented\\worker.log": "236487c56f33ab0b5bd9f4d27b809ec13b878a157bde7394de930cca5a55f9a9",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_stock\\model.pt": "74c93d3077e48f42bcd058e1f21c732118f3581ffb372ea99a0f1ef7485547e6",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_stock\\result.json": "af9bba639f1a354c7bfec148af4152cc4a5812d3baa511fd1fee292c61a76a3b",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\checks\\C1_vanilla_matched_s42_stock\\worker.log": "d924c4385c0d022bb9292fd0927e78c5d64834b487260f1355e07dc35c50c733",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\inputs.json": "236aadae7e0dd2516aa676bbf7249727631e32f76ededbc195dac8b9038e6d94",
+    "research\\validation_and_cost\\efficiency_evaluation\\C1_plain_gap\\instrumentation_verification.json": "c236b33f84c60fa94298f0bf93bf80982cf30e290dbc3e9b15044016b479c771"
+  }
+}

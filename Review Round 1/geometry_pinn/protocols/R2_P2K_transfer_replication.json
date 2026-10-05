@@ -1,0 +1,63 @@
+{
+  "id": "R2_P2K_transfer_replication",
+  "registered_before_training": true,
+  "seeds": [
+    260931,
+    260932
+  ],
+  "prior_seed": 260930,
+  "cases": {
+    "T1": {
+      "E": 1.0,
+      "nu": 0.26,
+      "lateral": -4.0,
+      "top": -4.0,
+      "hole_normal_stress": {
+        "cavity": 0.0,
+        "water": -1.0
+      },
+      "length_scale": 75.0,
+      "stress_scale": 2.5,
+      "displacement_scale": 0.01875
+    },
+    "S1": {
+      "E": 1.333,
+      "nu": 0.3333,
+      "lateral": -1.0,
+      "top": -5.0,
+      "hole_normal_stress": {
+        "cavity": 0.0
+      },
+      "length_scale": 1.0,
+      "stress_scale": 1.0,
+      "displacement_scale": 1.0
+    }
+  },
+  "methods": [
+    "fourier_half",
+    "geometry_rbf_fourier",
+    "uniform_rbf_fourier"
+  ],
+  "arms": [
+    "fixed_reset",
+    "uniform_refresh"
+  ],
+  "evaluation_steps": [
+    800,
+    1600
+  ],
+  "hypothesis": "The unchanged geometry-Gaussian/Fourier rule yields repeatable scoped engineering and distribution benefits beyond equal-capacity uniform Gaussian and complete half-Fourier controls on T1/S1. Prior S1 common-refresh 1600 primary improvement and T1 common-refresh 800 U/stress-distribution improvement are prespecified targets for replication.",
+  "primary_contrasts": [
+    "S1 common-refresh 1600 U/S/wall versus both controls",
+    "T1 common-refresh 800 U/S, U/S MAE and p95 versus both controls; wall and convergence trade-offs reported"
+  ],
+  "all_other_contrasts": "All cases, both arms, both fixed endpoints, regions, quantiles, geometry-defined engineering points and targets retained. No selective endpoint, arm, seed or metric-weight selection.",
+  "training_rule": "Reuse the exact frozen train_p2i implementation and all geometry/material/feature/loss/optimizer/sampling rules. Only seed and output/protocol paths change. 24 fresh trajectories, 1600 accepted steps each, four matched-reset 400-step blocks; 96 saved states, 48 evaluated endpoints. Both seeds must finish before reference-array evaluation.",
+  "reference_rule": "Reuse byte-verified P2J reference arrays and both independent physical sets, with the verified precision-aware geometry-only wall rule. No additional FEM repair, model selection or tuning.",
+  "summary": "Show the two new seeds separately as prospective replication, then descriptive pooled three-seed paired ratios (geometric mean, range, favorable count), arithmetic means and each seed. No statistical-significance or unseen-geometry claim from n=3. Include full error distribution/spatial coverage, engineering and resources.",
+  "decision": "A scoped benefit is repeated only if the named error or distribution measure favors geometry against both controls in BOTH new seeds; report per-measure outcomes without a combined score. Multimetric S1 headline requires all three primary metrics in both new seeds; T1 headline requires U/S and specified MAE/p95 in both. Failures narrow the claim; no retries, extra seeds or tuning. Do not demand every exploratory metric wins.",
+  "stop": "Close after 24 trajectories and all 48 evaluated fields; stop dependent work on nonfinite/early optimizer stop or numerical/hash failure. No new architecture search or added budgets in this batch.",
+  "formal_timing": false,
+  "P2J_completion_sha256": "f0c5ae7f9bb6d783a4d92170b369803cb020a6cda169598193d34be511a1a8cf",
+  "P2I_training_source_sha256": "992588a360f443dbc7015cc17a4c579b177784e85fe698312ed4fd64ca428026"
+}

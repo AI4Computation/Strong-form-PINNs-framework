@@ -1,0 +1,37 @@
+{
+  "job": "tr3_tunnel_q1p0",
+  "geometry": "tunnel",
+  "h": 1.0,
+  "quadratic": true,
+  "nodes": 23759,
+  "elements": 7780,
+  "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_revision3\\tr3_tunnel_q1p0.inp",
+  "steps": {
+    "Load": {
+      "file": "tr3_tunnel_q1p0_Load.npz",
+      "integration_points": 31120,
+      "area": 5317.971864826977,
+      "coord_error_initial": 2.6740839324844415e-06,
+      "coord_error_deformed": 0.06087087132368666,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        -1.0591749699528918e-11,
+        750.0000002384186
+      ],
+      "max_displacement": [
+        0.02781728282570839,
+        0.05629270151257515
+      ]
+    }
+  },
+  "element_types": {
+    "CPE8R": 7780
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R2_P2G_frozen_physics",
+  "type": "prospective diagnostic of previously observed frozen-field behavior; no new training",
+  "hypotheses": [
+    "L1 late-budget FEM error increases may reflect a growing training-to-independent physical residual gap, rather than simple failure to decrease the sampled objective.",
+    "The common geometry-feature rule may reduce that gap or its spatial extent relative to both full half-Fourier and capacity-matched uniform Gaussian-Fourier.",
+    "Boundary residuals, constitutive mismatch, numerical derivative error, or differences between selected wall quantities and global fields are alternatives; no cause is presumed."
+  ],
+  "input_batch": "R2_P2F_repetition_budget",
+  "cases": ["C1", "C8", "L1"],
+  "seeds": [260927, 260928, 260929],
+  "methods": ["fourier_half", "geometry_rbf_fourier", "uniform_rbf_fourier"],
+  "steps": [400, 800, 1600],
+  "independent_points": {"count_per_set": 24000, "seeds": [9274101, 9274102], "rule": "Uniform rejection sampling within normalized solid geometry. Same two sets for every method, training seed and budget; C1/C8 use identical circle points."},
+  "boundary": "Deterministic geometry-only Gauss quadrature: domain.boundary(spacing=0.002, order=3). Preserve each outer-edge mean separately and arc-length-normalize all cavity segments together. Evaluate bottom uy and the exact original horizontal gauge. No FEM or residual-guided boundary sampling.",
+  "regions": "Euclidean distance to cavity wall <=0.05 for near wall; complement for far wall. Polygon cavity-vertex distance <0.02 for corners; no circular corner mask. Masks come only from geometry. Save all points and masks.",
+  "metrics": "Five raw domain residual components (two equilibrium, three constitutive), per-component mean square, group/total mean squares, 50/90/95/99/max norms and highest-one-percent-point residual-square share. Full and fixed-region results on BOTH independent sets and actual training uniform/probe points. Raw boundary constraint residuals and corresponding mean squares, percentiles and max. Reconstructed original weighted training objective; independent objective replaces only integration points, retaining loss weights and boundary conventions.",
+  "numerical_audit": "For each of the 81 frozen fields, use the eight largest residual locations on independent set 0 plus eight fixed seeded random locations. Compare float64 analytic derivatives with independent full autograd and independently assembled residual equations; scaled max error <1e-9. Compare saved float32 residuals against float64, scaled max error <3e-4. This selects numerical audit points only, never training points or model steps. Save all audit arrays. Recomputed sampled loss must agree with stored trace within 2e-5*max(0.01, absolute trace loss).",
+  "comparisons": "For each seed and method, report 400->800->1600 changes, independent/training-uniform ratios and spatial residual mass; compare both controls at each fixed budget. Keep two point-set results separate. Read already frozen P2F FEM summary only for post-diagnostic interpretation; no new FEM computation or model selection. An association between residual growth and FEM error is mechanistic evidence, not a causal intervention or universal theorem.",
+  "cost": "No optimizer, new scientific training, model repair or formal timing. One project GPU evaluation job at a time; no package/environment changes.",
+  "stop": "Complete all 81 fields, numerical checks, full raw data and report, then close. Stop on input hash mismatch, nonfinite output or failed numerical check and report it. Do not add seeds, modify encoders, resample training points, select a preferred checkpoint, expand to T1/S1 or run repair training within this protocol.",
+  "original_anchoring": "Any new geometry-feature benefit does not establish original anchor-bias attribution. Preserve all previous results unchanged."
+}

@@ -1,0 +1,38 @@
+{
+  "job": "tr3_kirsch_q0p01",
+  "geometry": "kirsch",
+  "h": 0.01,
+  "quadratic": true,
+  "nodes": 34568,
+  "elements": 11368,
+  "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_revision3\\tr3_kirsch_q0p01.inp",
+  "sha256": "e807530bd7a2841177e4d7eba2506b71a817e3aedb6c3e70e26eb312344fd5ee",
+  "steps": {
+    "Kirsch": {
+      "file": "tr3_kirsch_q0p01_Kirsch.npz",
+      "integration_points": 45472,
+      "area": 0.9685840734682643,
+      "coord_error_initial": 2.0297463970265248e-08,
+      "coord_error_deformed": 1.6609157687522726,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        -7.771561172376096e-16,
+        5.820721682425756e-11
+      ],
+      "max_displacement": [
+        0.5450946688652039,
+        1.6655467748641968
+      ]
+    }
+  },
+  "element_types": {
+    "CPE8R": 11368
+  }
+}

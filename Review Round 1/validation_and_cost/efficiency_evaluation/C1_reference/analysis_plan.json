@@ -1,0 +1,16 @@
+{
+  "scope": "Descriptive analysis of all 32 fresh-process C1 measurements; not a claim of preregistration or independent-geometry validation.",
+  "primary_targets_pct": [5, 2, 1],
+  "primary_metric_sets": {"displacement": ["u_vector_pct"], "stress": ["s_vector_pct"], "both": ["u_vector_pct", "s_vector_pct"]},
+  "secondary_metric_sets": {"area_stress": ["s_area_pct"], "u_and_area_stress": ["u_vector_pct", "s_area_pct"]},
+  "crossing": "First successful observed accepted state, with prior-failure/current-success brackets for solver and elapsed state clocks; separately report time when evaluation is available.",
+  "stability": "First sequence of three successful observations: start and confirmation times, plus terminal status and pass-to-fail transition count over all observed states.",
+  "unreached": "Keep in the denominator. Conditional successful-run time summaries are explicitly labelled. Never replace NR by an invented crossing.",
+  "common_horizon": "For a supplementary all-seed cost summary, tau is the minimum final observed solver-state time across the complete cohort. Use min(first observed hit, tau), with NR assigned tau solely for this restricted descriptive summary. Also report attained counts within tau; not a claim that NR actually reached at tau.",
+  "paired_comparisons": "Seed-paired geometric mean time ratios and 95% percentile bootstrap intervals only when both methods reach the target in all eight seeds; otherwise show rates and restricted-horizon summaries. Resample eight paired seeds 10000 times with RNG 20261222. No p-value claims.",
+  "resources": "Per-method mean, SD and range of solver CUDA allocated/reserved peaks, process lifetime RAM, and process CPU time. Resource capacity, parameter count and actual consumption remain distinct.",
+  "clock_conventions": "Time-to-target refers to the computed parameter state before a disk export. Terminal full-solver cost includes final solution export. Evaluation and extra logging are separately measured; external monitoring overhead is not subtracted.",
+  "numerical_audit": "Check frozen input and code hashes, sampling and initial-state equality, monotone clocks, sum of solver and common-diagnostic time, all 32 result/telemetry records, and current-run metric consistency. Historical endpoint accuracy is not reused.",
+  "interference": "Use frozen measurement protocol flags, preserve every attempt. Do not pool flagged measurements into an unqualified fair-time result.",
+  "limitations": ["One GPU/laptop configuration", "Eight development seeds; seed variation is not repeated-timing jitter at identical weights", "No direct claim for new coupled physical-neural candidates", "No energy-consumption claim from runtime alone"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R2_P1B",
+  "registered_before_execution": true,
+  "purpose": "Check trainable sparse mixed-field implementation on all four frozen P1 covers before scientific training.",
+  "cases": ["C1", "T1", "S1", "L1"],
+  "target_trainable_parameters": 110705,
+  "global_hidden_width": 32,
+  "local_hidden_layers": 2,
+  "local_activation": "tanh",
+  "field_order": ["ux", "uy", "sxx", "syy", "sxy"],
+  "allocation": "Two adjacent integer widths, counted as actual torch Parameters, with larger widths assigned by fixed seed-250927 permutation of the sorted patch array; maximize count without exceeding target.",
+  "precision": "float64",
+  "device": "CPU",
+  "cpu_threads": 2,
+  "seed": 250927,
+  "audit_points_per_geometry": 23,
+  "checks": ["sparse field against independent dense field", "explicit complete spatial derivatives against torch autograd", "mixed residual against autograd derivative residual", "all trainable parameter groups participate", "parameter-gradient directional finite difference", "parameter budget", "at most four local experts per P1 probe", "zeroed local output leaves the coarse field unchanged"],
+  "tolerances": {"field_absolute": 1e-10, "spatial_derivative_absolute": 1e-9, "residual_absolute": 1e-8, "parameter_directional_relative": 2e-5, "parameter_shortfall_fraction": 0.001},
+  "fem_access": false,
+  "scientific_training_runs": 0,
+  "timing_valid_for_comparison": false,
+  "stop_rule": "No scientific optimization until all numerical checks pass. This check does not establish accuracy, resource savings, novelty, sampling adequacy or a preferred architecture."
+}

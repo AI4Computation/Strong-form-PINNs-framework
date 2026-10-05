@@ -1,0 +1,22 @@
+[
+  {
+    "job": "tr3_kirsch_q0p01",
+    "geometry": "kirsch",
+    "h": 0.01,
+    "quadratic": true,
+    "nodes": 34568,
+    "elements": 11368,
+    "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_revision3\\tr3_kirsch_q0p01.inp",
+    "sha256": "e807530bd7a2841177e4d7eba2506b71a817e3aedb6c3e70e26eb312344fd5ee"
+  },
+  {
+    "job": "tr3_kirsch_q0p005",
+    "geometry": "kirsch",
+    "h": 0.005,
+    "quadratic": true,
+    "nodes": 138736,
+    "elements": 45936,
+    "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_revision3\\tr3_kirsch_q0p005.inp",
+    "sha256": "2949649e40cfba3b833ff7acd5179cd6e9f8b6e3623cd3ba87a231e370a8d690"
+  }
+]

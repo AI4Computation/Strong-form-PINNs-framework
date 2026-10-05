@@ -1,0 +1,18 @@
+{
+  "id": "R2_P2M_representation_audit",
+  "registered_before_execution": true,
+  "hypothesis": "The shared input representation can accept odd Gaussian counts by retaining ceil(M/2) sine and floor(M/2) cosine channels, where M=1000-K, without changing any previously evaluated even-count model.",
+  "scope": "CPU construction and differential consistency only. No optimizer, FEM, scientific training, accuracy ranking or formal timing.",
+  "original_geometries": ["C1", "T1", "S1", "L1"],
+  "additional_geometry_only_cases": [
+    {"name":"offset_circle","center":[0.031,0.017],"axes":[0.1,0.1],"angle":0.0},
+    {"name":"offset_ellipse","center":[0.019,-0.023],"axes":[0.14,0.06],"angle":0.31}
+  ],
+  "odd_unit_fixture": "First245 centres and widths of frozen T1. This is an algebraic unit fixture, not a new cavity or accuracy result.",
+  "seed": 260933,
+  "checks": ["Original four centre/width arrays reproduce exactly", "Original even-count states and outputs reproduce bitwise", "Every accepted representation has1000 features and110705 trainable parameters", "Odd feature derivatives and mixed-output Jacobians agree with independent autograd within1e-10 relative scale", "Odd-case loss gradients are finite", "Normalized input construction is translation/isotropic-scale equivariant within1e-12 on two declared geometry-only variants", "K<=0 or K>=1000 is rejected explicitly, with no silent feature removal"],
+  "budget": "Four original geometries, two declared new geometry-only variants, one synthetic odd-count fixture. No adaptive expansion or training.",
+  "stop": "Any unexpected numerical or preservation failure stops dependent method claims. Successful construction does not demonstrate PDE accuracy, collision-free support, unseen-geometry solution generalization, rotation equivariance or arbitrary-complexity capacity.",
+  "frozen_code_policy": "New wrapper only; never edit shared_geometry_features.py, cavity_cover.py or any frozen result. Existing even-count method definitions remain exact.",
+  "remaining_domain": "Polygon/ellipse cavities handled by existing constructor;1<=K<1000. Budget overflow remains an explicit applicability limit. Global Fourier scale and all geometry rule constants remain fixed hyperparameters."
+}

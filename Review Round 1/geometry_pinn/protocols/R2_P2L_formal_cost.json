@@ -1,0 +1,253 @@
+{
+  "id": "R2_P2L_formal_cost",
+  "registered_before_timing": true,
+  "idle_machine_confirmed": true,
+  "purpose": "Controlled cost replay of the exact frozen T1/S1 common-refresh trajectories, not new seeds or architectural search. Measure full specified pipeline cost and fixed-endpoint target attainment; retain all failures and trade-offs.",
+  "jobs": [
+    {
+      "index": 0,
+      "case": "T1",
+      "seed": 260930,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 0,
+      "position": 0
+    },
+    {
+      "index": 1,
+      "case": "T1",
+      "seed": 260930,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 0,
+      "position": 1
+    },
+    {
+      "index": 2,
+      "case": "T1",
+      "seed": 260930,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 0,
+      "position": 2
+    },
+    {
+      "index": 3,
+      "case": "S1",
+      "seed": 260930,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 1,
+      "position": 0
+    },
+    {
+      "index": 4,
+      "case": "S1",
+      "seed": 260930,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 1,
+      "position": 1
+    },
+    {
+      "index": 5,
+      "case": "S1",
+      "seed": 260930,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 1,
+      "position": 2
+    },
+    {
+      "index": 6,
+      "case": "T1",
+      "seed": 260931,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 2,
+      "position": 0
+    },
+    {
+      "index": 7,
+      "case": "T1",
+      "seed": 260931,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 2,
+      "position": 1
+    },
+    {
+      "index": 8,
+      "case": "T1",
+      "seed": 260931,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 2,
+      "position": 2
+    },
+    {
+      "index": 9,
+      "case": "S1",
+      "seed": 260931,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 3,
+      "position": 0
+    },
+    {
+      "index": 10,
+      "case": "S1",
+      "seed": 260931,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 3,
+      "position": 1
+    },
+    {
+      "index": 11,
+      "case": "S1",
+      "seed": 260931,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 3,
+      "position": 2
+    },
+    {
+      "index": 12,
+      "case": "T1",
+      "seed": 260932,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 4,
+      "position": 0
+    },
+    {
+      "index": 13,
+      "case": "T1",
+      "seed": 260932,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 4,
+      "position": 1
+    },
+    {
+      "index": 14,
+      "case": "T1",
+      "seed": 260932,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 4,
+      "position": 2
+    },
+    {
+      "index": 15,
+      "case": "S1",
+      "seed": 260932,
+      "method": "geometry_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 5,
+      "position": 0
+    },
+    {
+      "index": 16,
+      "case": "S1",
+      "seed": 260932,
+      "method": "fourier_half",
+      "arm": "uniform_refresh",
+      "block": 5,
+      "position": 1
+    },
+    {
+      "index": 17,
+      "case": "S1",
+      "seed": 260932,
+      "method": "uniform_rbf_fourier",
+      "arm": "uniform_refresh",
+      "block": 5,
+      "position": 2
+    }
+  ],
+  "cases": {
+    "T1": {
+      "E": 1.0,
+      "nu": 0.26,
+      "lateral": -4.0,
+      "top": -4.0,
+      "hole_normal_stress": {
+        "cavity": 0.0,
+        "water": -1.0
+      },
+      "length_scale": 75.0,
+      "stress_scale": 2.5,
+      "displacement_scale": 0.01875
+    },
+    "S1": {
+      "E": 1.333,
+      "nu": 0.3333,
+      "lateral": -1.0,
+      "top": -5.0,
+      "hole_normal_stress": {
+        "cavity": 0.0
+      },
+      "length_scale": 1.0,
+      "stress_scale": 1.0,
+      "displacement_scale": 1.0
+    }
+  },
+  "seeds": [
+    260930,
+    260931,
+    260932
+  ],
+  "methods": [
+    "fourier_half",
+    "geometry_rbf_fourier",
+    "uniform_rbf_fourier"
+  ],
+  "optimizer": {
+    "lr": 1.0,
+    "max_iter": 400,
+    "max_eval": 600,
+    "history_size": 50,
+    "line_search_fn": "strong_wolfe",
+    "tolerance_grad": 1e-07,
+    "tolerance_change": 1e-12
+  },
+  "accepted_steps": 1600,
+  "blocks": 4,
+  "evaluation_steps": [
+    800,
+    1600
+  ],
+  "targets": [
+    [
+      5,
+      20,
+      10
+    ],
+    [
+      2,
+      10,
+      5
+    ],
+    [
+      1,
+      5,
+      2
+    ]
+  ],
+  "ordering": "Six case/seed blocks use all six method permutations once; alternating T1/S1; each method occupies each position twice. One GPU worker process at a time; no other project training, rendering, bulk analysis or hashing during a timed solve.",
+  "process": "Fresh Python process for each run, two OMP/MKL/OpenBLAS/Torch CPU threads, deterministic CUDA, TF32 off. Warm CUDA/model kernels with 50 identical full-objective backward evaluations using disposable half-Fourier model and original case points before measurement; no optimizer. Fixed eight-second inter-run rest. AC power required. No clock, driver, software or environment installation changes.",
+  "idle_gate": "Before each worker, measure system CPU over 2s and query GPU. Require AC power, CPU<=15%, GPU utilization<=10%; if a gate fails, stop before timed run (do not silently discard/retry completed runs). Record baseline and continuous GPU telemetry every 2s. Desktop background processes are not killed. WDDM process-memory attribution may be unavailable; do not claim perfect hardware isolation.",
+  "cost_boundary": "Primary warmed-process solve elapsed starts before domain normalization, reconstruction of P1 geometry cover and sampling support cover, original seed point generation, method-specific uniform Gaussian construction if needed, model initialization/transfer, all refreshed point generation, cache preparation, optimizer setup, training and checkpoint/trace recording. Record checkpoints at all 400-step blocks, but accuracy endpoints only800/1600. Full elapsed includes lightweight monitoring and checkpoint I/O; component compute times also reported. Process startup/warmup, post-run byte-verification, reference evaluation and parent inter-run rest are outside solve elapsed and reported separately when measurable. No cached construction can erase its cost.",
+  "common_preprocessing": "All three methods require geometry/support cover for the fixed shared-probe comparison protocol; charge and label this common cost for every method. This is not the cheapest standalone Fourier workflow. Report common cost separately from representation and optimization.",
+  "reproduction": "Regenerated centres, widths and all four point blocks must exactly equal frozen inputs. All four checkpoints must match original tensors bitwise, and accepted steps/closures must match. On mismatch stop cost-to-accuracy inference; do not reuse old errors for a changed state.",
+  "accuracy_use": "Only after all timed solves finish and exact replay checks pass, reuse byte-verified P2J/P2K error/engineering/distribution metrics. No FEM-based stopping, selection or tuning during timing. Targets are first observed at800/1600 only, not exact first-passage times; report nonattainment and later loss. No successful-only pooled speedup when methods have different successful runs.",
+  "inference": "After1600, separately time generation of10000 fixed uniform solid queries (seed67001) and batched prediction of all five outputs; save predictions and query coordinates. These outputs are reference-free, not extra accuracy selection.",
+  "resources": "Same110705 trainable parameters; reset torch peak allocated/reserved counters per run; sample worker RSS and system CPU/AC every0.5s. Retain measured peak sampled RSS, baseline RSS, telemetry and process envelope. Distinguish allocation from total GPU usage and sampled from exact host-memory peak.",
+  "stop": "Exactly18 timed replays; no added seeds/arms/budgets. Numerical/reproduction/nonfinite/AC/idle-gate failure stops dependent work and is reported. Preserve all completed costs.",
+  "formal_timing": true,
+  "new_scientific_conditions": 0,
+  "P2K_completion_sha256": "3007ffc8aa7c191d6f18484fa24bf702c17b4a71792be6af7e661a424e196673",
+  "P2J_completion_sha256": "f0c5ae7f9bb6d783a4d92170b369803cb020a6cda169598193d34be511a1a8cf"
+}

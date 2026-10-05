@@ -1,0 +1,83 @@
+{
+  "job": "tr3_circle_sq0p0025",
+  "geometry": "circle",
+  "h": 0.0025,
+  "quadratic": true,
+  "nodes": 553840,
+  "elements": 184000,
+  "input_file": "D:\\Abaqus\\_projects\\jobs\\tust_revision3\\tr3_circle_sq0p0025.inp",
+  "steps": {
+    "UnitL": {
+      "file": "tr3_circle_sq0p0025_UnitL.npz",
+      "integration_points": 736000,
+      "area": 0.9685840737173521,
+      "coord_error_initial": 2.1312161414669788e-08,
+      "coord_error_deformed": 0.444961481447917,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        3.807064797960169e-13,
+        1.6143530956469476e-11
+      ],
+      "max_displacement": [
+        0.40170204639434814,
+        0.3905479311943054
+      ]
+    },
+    "UnitT": {
+      "file": "tr3_circle_sq0p0025_UnitT.npz",
+      "integration_points": 736000,
+      "area": 0.9685840737173521,
+      "coord_error_initial": 2.1312161414669788e-08,
+      "coord_error_deformed": 0.7730826337292349,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        -6.451518464421768e-13,
+        0.9999999993015081
+      ],
+      "max_displacement": [
+        0.2057708203792572,
+        0.7733247876167297
+      ]
+    },
+    "Check": {
+      "file": "tr3_circle_sq0p0025_Check.npz",
+      "integration_points": 736000,
+      "area": 0.9685840737173521,
+      "coord_error_initial": 2.1312161414669788e-08,
+      "coord_error_deformed": 3.47498429129097,
+      "ip_shape_permutation": {
+        "CPE8R": [
+          1,
+          2,
+          4,
+          3
+        ]
+      },
+      "sum_reaction": [
+        -6.721455531912002e-13,
+        4.999999993480742
+      ],
+      "max_displacement": [
+        0.6271522641181946,
+        3.476076126098633
+      ]
+    }
+  },
+  "element_types": {
+    "CPE8R": 184000
+  }
+}

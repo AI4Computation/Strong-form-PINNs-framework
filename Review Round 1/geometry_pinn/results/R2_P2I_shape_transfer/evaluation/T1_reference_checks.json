@@ -1,0 +1,11 @@
+{
+  "case": "T1",
+  "source_sha256": {
+    "research\\controlled_pinn\\fem\\tr3_tunnel_tq0p125_Load.npz": "7b2f6c015c52edee54e9267de1136d24ce837bfa3df5c1f617a323c573b60653"
+  },
+  "stress_reconstruction_percent": 0.001846357792515826,
+  "maximum_position_defect": 3.885780586188048e-16,
+  "area": 0.9454171674978195,
+  "geometry_area": 0.9454171675171602,
+  "integration_points": 2066193
+}

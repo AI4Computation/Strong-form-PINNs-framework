@@ -1,0 +1,23 @@
+{
+  "case": "S1",
+  "source_sha256": {
+    "research\\validation_and_cost\\shape_references\\full_integration\\tsf_square_g3_Load.npz": "64971ca7c72d59d93684e3179286995ecb44ea5b52d5981fda2262193b39da2e",
+    "research\\validation_and_cost\\shape_references\\tsr_square_g3_mesh.npz": "313996b6a884755c3ea89c8981d1f86c7df85183c1e6131c6fb86b1dbb2b5053"
+  },
+  "stress_reconstruction_percent": 0.0036295952003783075,
+  "maximum_position_defect": 3.885780586188048e-16,
+  "area": 0.9600000001236357,
+  "geometry_area": 0.96,
+  "integration_points": 1382400,
+  "passed": true,
+  "path": "research\\geometry_pinn\\results\\R2_P2J_reference_repair\\evaluation\\S1_reference.npz",
+  "sha256": "03187ae07b6c338b3deda83c535bb29c6dd953333b1326a1a840cae5a53508d3",
+  "wall_offset_sensitivity_max": 6.525977218618806e-07,
+  "half_offset_sensitivity_max": 3.2631634216961913e-07,
+  "solid_side_offset": 1e-08,
+  "normalization": {
+    "length": 1.0,
+    "displacement": 1.0,
+    "stress": 1.0
+  }
+}

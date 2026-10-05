@@ -1,0 +1,23 @@
+{
+  "case": "T1",
+  "source_sha256": {
+    "research\\controlled_pinn\\fem\\tr3_tunnel_tq0p125_Load.npz": "7b2f6c015c52edee54e9267de1136d24ce837bfa3df5c1f617a323c573b60653",
+    "research\\geometry_pinn\\results\\R2_P2J_reference_repair\\T1_exact_mesh.npz": "c5455cf99e063548c88c9c4f6a702cc94a55f43ac36afdfa2899654f5f0da61b"
+  },
+  "stress_reconstruction_percent": 0.0018457172081089938,
+  "maximum_position_defect": 3.885780586188048e-16,
+  "area": 0.9454171674978195,
+  "geometry_area": 0.9454171675171602,
+  "integration_points": 2066193,
+  "passed": true,
+  "path": "research\\geometry_pinn\\results\\R2_P2J_reference_repair\\evaluation\\T1_reference.npz",
+  "sha256": "0d7781f276f6378046f2aa681f5aca98f8dcd0e94456655c00dde326404218c2",
+  "wall_offset_sensitivity_max": 1.9062662126589913e-06,
+  "half_offset_sensitivity_max": 9.531754296965289e-07,
+  "solid_side_offset": 2.384185791015625e-07,
+  "normalization": {
+    "length": 75.0,
+    "displacement": 0.01875,
+    "stress": 2.5
+  }
+}

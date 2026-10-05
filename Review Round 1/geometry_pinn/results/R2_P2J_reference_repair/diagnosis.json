@@ -1,0 +1,85 @@
+{
+  "source_sha256": {
+    "research\\controlled_pinn\\fem\\tr3_tunnel_tq0p125_Load.npz": "7b2f6c015c52edee54e9267de1136d24ce837bfa3df5c1f617a323c573b60653",
+    "research\\controlled_pinn\\fem\\abaqus\\tr3_tunnel_tq0p125.inp": "817faa0b07984e04c258f06d7a08887086826b730e8b5f7413cc3fe34467056f"
+  },
+  "source_code_sha256": "c77ca356ac7ca1938e7b4fdc6663cb0909435f9560c73f7970077d99662a39ef",
+  "suspended_batch_sha256": "43aab02f40f89c8246d3ddcfd86d45212662b233344fcad5c232f8c96a407dbc",
+  "nodes": 1380574,
+  "elements": 688731,
+  "max_export_input_coordinate_difference_physical": 5.000000058430487e-08,
+  "export_exactly_float32_rounded_input": true,
+  "checks": {
+    "exported_1e-08": {
+      "failed_count": 17,
+      "failed_indices": [
+        1271,
+        1286,
+        1309,
+        1310,
+        1326,
+        1345,
+        1410,
+        1439,
+        1458,
+        1514,
+        1527,
+        1538,
+        1546,
+        1550,
+        1568,
+        1588,
+        1589
+      ],
+      "failed_tags": [
+        "water"
+      ],
+      "max_violation_failed": 5.18146544625786e-06
+    },
+    "expanded_512_candidates": {
+      "failed_count": 17,
+      "tested": 17
+    },
+    "exported_2e-08": {
+      "failed_count": 0,
+      "failed_indices": [],
+      "failed_tags": [],
+      "max_violation_failed": 0.0
+    },
+    "exact_input_1e-08": {
+      "failed_count": 17,
+      "failed_indices": [
+        1271,
+        1286,
+        1309,
+        1310,
+        1326,
+        1345,
+        1410,
+        1439,
+        1458,
+        1514,
+        1527,
+        1538,
+        1546,
+        1550,
+        1568,
+        1588,
+        1589
+      ],
+      "failed_tags": [
+        "water"
+      ],
+      "max_violation_failed": 5.233536879201139e-06
+    },
+    "exact_input_2e-08": {
+      "failed_count": 0,
+      "failed_indices": [],
+      "failed_tags": [],
+      "max_violation_failed": 0.0
+    }
+  },
+  "models_read": false,
+  "training_runs": 0,
+  "formal_timing": false
+}

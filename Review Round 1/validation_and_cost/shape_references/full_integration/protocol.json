@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-20T18:42:26.820580+00:00",
+  "question": "Independent full-integration cross-check after CPE8R common-point stress refinement changes of about0.5%.",
+  "data_seen": "Reference mesh convergence only; no square/slender neural or source-solver predictions.",
+  "change": "Same exact input meshes, material, load and support; CPE8 replaces CPE8R on levels2and3 for both shapes.",
+  "timing_valid_for_comparison": false
+}

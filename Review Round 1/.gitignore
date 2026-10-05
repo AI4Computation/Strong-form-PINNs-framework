@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pt
+*_predictions.npz
+*_error_norms.npz
+*_residuals.npz
+/controlled_pinn/runs/
+/controlled_pinn/summary/
+/diagnostics/summary/

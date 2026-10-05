@@ -1,0 +1,21 @@
+{
+  "id": "R2_P1C",
+  "registered_before_execution": true,
+  "purpose": "Resolve the measured missing-expert audit coverage in R2_P1B with geometry-only support probes, without changing the network or its frozen cover.",
+  "parent": "R2_P1B",
+  "observed_failure": {"C1_unexercised": 0, "T1_unexercised": 3, "S1_unexercised": 1, "L1_unexercised": 17},
+  "cases": ["C1", "T1", "S1", "L1"],
+  "target_trainable_parameters": 110705,
+  "global_hidden_width": 32,
+  "seed": 250927,
+  "cpu_threads": 2,
+  "audit_points_per_geometry": 23,
+  "support_probe_rule": "For every frozen compact patch, use the solid point with maximum unnormalized local window on a fixed 33x33 local grid; if empty, repeat at 65 then 129. Append one point per patch to the unchanged 12000 uniform audit points. Reject if no non-negligible support is found. This is an audit point set, not a training sampling protocol.",
+  "support_probe_minimum_raw_weight": 1e-8,
+  "checks": ["all parent numerical checks", "all experts exercised", "at least one geometry-admitted local probe per expert", "all original uniform points retained"],
+  "tolerances": {"field_absolute": 1e-10, "spatial_derivative_absolute": 1e-9, "residual_absolute": 1e-8, "parameter_directional_relative": 2e-5, "parameter_shortfall_fraction": 0.001},
+  "fem_access": false,
+  "scientific_training_runs": 0,
+  "timing_valid_for_comparison": false,
+  "stop_rule": "No scientific training until the failed expert-coverage condition and all derivative/budget checks pass. Training later needs a separately registered common point distribution and physical averaging convention."
+}
